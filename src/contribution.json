@@ -1,0 +1,13 @@
+{
+  "programNodes": [
+    {
+      "excludeFromToolbox": false,
+      "translationPath": "assets/i18n/",
+      "iconURI": "assets/icons/script-file-program.svg",
+      "behaviorURI": "script-file-program.worker.js",
+      "presenterURI": "main.js",
+      "componentTagName": "fllu-script-file-selector-script-file-program"
+    }
+  ],
+  "smartSkills": []
+}

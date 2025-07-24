@@ -1,0 +1,11 @@
+metadata:
+  vendorID: "fllu"
+  urcapID: "script-file-selector"
+  vendorName: "fllu"
+  urcapName: "ScriptFileSelector"
+  version: 1.0.0
+artifacts:
+  webArchives:
+  - id: "script-file-selector"
+    folder: "script-file-selector"
+    #devUrl: http://host.gateway.ip:4200/

@@ -1,0 +1,11 @@
+<!-- <div class="script-file-dialog"> -->
+<!--     <header class="script-file-dialog-header">
+        <ur-icon>script</ur-icon>
+        <ur-heading [type]="'h1'" [size]="'medium'">Script Code Editor</ur-heading>
+    </header> -->
+    
+    <div class="script-file-dialog-content">
+        <ngx-monaco-editor [options]="editorOptions" [(ngModel)]="inputData.scriptContent"></ngx-monaco-editor>
+        <div>Info: This editor uses Python for syntax highlighting. URScript code might not be highleted correctly.</div>
+    </div>
+<!-- </div> -->

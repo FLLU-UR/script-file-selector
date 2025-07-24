@@ -1,0 +1,17 @@
+<div *ngIf="contributedNode" class="inline-component">
+<!--     <span *ngIf="contributedNode?.fileName; else noFile">
+  Selected file: "{{ contributedNode.fileName }}"
+</span>
+<ng-template #noFile>
+  <span *ngIf="contributedNode?.scriptContent">
+    Select file or edit script code
+  </span>
+</ng-template> -->
+    <input type="file" class="file-input" accept=".txt,.script" (change)="onFileSelected($event)" #fileInput />
+    <ur-button [type]="contributedNode?.scriptContent ? 'filled' : 'invalid'" icon="import" (click)="fileInput.click()">Select File</ur-button>
+    <span >
+    or
+  </span>
+    <ur-button [type]="contributedNode?.scriptContent ? 'filled' : 'invalid'" icon="script" (click)="showScriptCode()"> {{ contributedNode?.scriptContent ? 'Edit Script Code' : 'Create Script Code'
+        }}</ur-button>
+</div>

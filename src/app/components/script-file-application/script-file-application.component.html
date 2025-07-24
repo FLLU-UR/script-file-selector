@@ -1,0 +1,13 @@
+<div *ngIf="applicationNode" class="component">
+    <div class="section">
+        <span>Hello?!</span>
+        <input type="text" [(ngModel)]="firstName" />
+        <ngx-monaco-editor class="my-code-editor" [options]="editorOptions" [(ngModel)]="code"></ngx-monaco-editor>
+    </div>
+</div>
+
+<div style="height: 500px">
+    <ngx-monaco-editor style="height: 100%" [options]="editorOptions" [(ngModel)]="code"></ngx-monaco-editor>
+</div>
+
+<ngx-monaco-editor class="my-code-editor" [options]="editorOptions" [(ngModel)]="code"></ngx-monaco-editor>
